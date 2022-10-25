@@ -16,29 +16,30 @@ Researched answer: a foreign key is a column of the table which belongs to the o
 
 Your answer: the ones that invlolve seeing, creating, updating and deleting them so the computer and/or software knows what to see, change, create, update and delete. this would be view, put, post , delete, and patch.
 
-Researched answer:
+Researched answer: I couldnt find any online sources that informed me of the required routes that needed params
 
 3. Name three rails generator commands. What is created by each?
 
 Your answer: rails g model, this will create a table for rails that can be fillable with different instances. rails g resources, does similair function to rails g model but removes view by default for backend developing. i cant think of any others at the top of my head
 
-Researched answer:
+Researched answer: rails generate -h would give a list of available generate commands to use. -h is listed as the help option. there is rails generate - f which forces the terminal to write over past saved files. rails g -q will suppress status output 
+source: https://medium.com/@josephdlawson21/using-the-generate-command-in-rails-9c738380f2d9
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
-action: "GET" location: /students   index.controller
+action: "GET" location: /students   index.controller it would show list of students
 
-action: "POST" location: /students update.controller
+action: "POST" location: /students update.controller it would allow creation of students info
 
-action: "GET" location: /students/new index.controller
+action: "GET" location: /students/new index.controller 
 
-action: "GET" location: /students/2 
+action: "GET" location: /students/2 index.controller looks at one of the students info
 
-action: "GET" location: /students/2/edit
+action: "GET" location: /students/2/edit update.controller allow edit or update of student information
 
-action: "PATCH" location: /students/2
+action: "PATCH" location: /students/2 update.controller allow edit or update of student information
 
-action: "DELETE" location: /students/2
+action: "DELETE" location: /students/2 delete.controller would delete information of students
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
 
